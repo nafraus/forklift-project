@@ -1,6 +1,6 @@
 # forklift-project
 
 # Credits:
-Michael Kleinbreil
+Michael Kleinbriel
 Keith Lerner
 Nick Fraus
