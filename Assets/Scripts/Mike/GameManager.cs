@@ -3,14 +3,14 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-
+    public int teamAmount = 1;
     
     [SerializeField]
     private List<Team> teams = new List<Team>(); //List of Team objects
 
     void Start()
     {
-        for (int i = 0; i < teams.Count - 1; i++)
+        for (int i = 0; i < teamAmount; i++)
         {
             teams[i] = new Team();
             teams[i].SetID(i);

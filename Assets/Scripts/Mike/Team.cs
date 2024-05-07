@@ -34,4 +34,9 @@ public class Team : MonoBehaviour
     {
         score -= amount;
     }
+
+    public int GetScore()
+    {
+        return score;
+    }
 }
