@@ -1,4 +1,4 @@
-using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Box : MonoBehaviour
@@ -23,8 +23,6 @@ public class Box : MonoBehaviour
     //Update box stuff on editor change
     private void OnValidate()
     {
-        if (Application.isPlaying) return;
-
         UpdateBox();
     }
 
@@ -68,5 +66,10 @@ public class Box : MonoBehaviour
     public int GetScoreAmount()
     {
         return boxScore;
+    }
+
+    public BoxType GetBoxType()
+    {
+        return boxType;
     }
 }

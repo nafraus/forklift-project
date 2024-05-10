@@ -11,4 +11,10 @@ public class ScoreManager : MonoBehaviour
     {
         
     }
+
+    //Updates score UI
+    public void UpdateUI()
+    {
+
+    }
 }
