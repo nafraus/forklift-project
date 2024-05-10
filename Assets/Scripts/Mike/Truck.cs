@@ -136,6 +136,9 @@ public class Truck : MonoBehaviour
         {
             Destroy(go);
         }
+
+        //Make new order
+        GenerateOrder();
     }
 
     //Changes Color of truck when mouse is over it
