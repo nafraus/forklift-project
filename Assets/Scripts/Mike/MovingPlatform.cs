@@ -17,16 +17,16 @@ public class MovingPlatform : MonoBehaviour
 
     private bool canMove = true;
 
-    //Used for when the player is on the moving platform or not
-    private Transform originalPlayerParent;
+    private Rigidbody rb;
 
     private void Start()
     {
         transform.position = waypoints[currentIndex].position;
+        rb = GetComponent<Rigidbody>();
     }
 
 
-    void Update()
+    void FixedUpdate()
     {
         if (canMove)
         {
@@ -42,12 +42,15 @@ public class MovingPlatform : MonoBehaviour
             if (currentIndex >= waypoints.Length)
             {
                 StartCoroutine(WaitAtEnd());
+                return;
             }
         }
 
         if (canMove)
         {
-            transform.position = Vector3.MoveTowards(transform.position, waypoints[currentIndex].transform.position, moveSpeed * Time.deltaTime);
+            Vector3 newPosition = Vector3.MoveTowards(transform.position, waypoints[currentIndex].transform.position, moveSpeed * Time.deltaTime);
+            rb.MovePosition(newPosition);
+
         }
     }
 
@@ -63,28 +66,6 @@ public class MovingPlatform : MonoBehaviour
 
         canMove = true;
 
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        //If it's the player, parent it to the moving platform
-        if (other.CompareTag("Player"))
-        {
-            if (originalPlayerParent == null)
-            {
-                originalPlayerParent = other.transform.parent;
-            }
-            other.gameObject.transform.parent = transform;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            //Return the player to its original parent
-            other.gameObject.transform.parent = originalPlayerParent;
-        }
     }
 
 

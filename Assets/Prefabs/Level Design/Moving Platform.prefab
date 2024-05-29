@@ -142,7 +142,6 @@ GameObject:
   - component: {fileID: 1408421456044545261}
   - component: {fileID: 4414736884552233693}
   - component: {fileID: 1258526246315744385}
-  - component: {fileID: 6330885221667707559}
   - component: {fileID: 1207873698084300901}
   m_Layer: 0
   m_Name: Moving Object
@@ -235,7 +234,7 @@ MonoBehaviour:
   - {fileID: 5801323133219786386}
   - {fileID: 5043044311171469031}
   - {fileID: 1382732167547248163}
-  moveSpeed: 10
+  moveSpeed: 2
   endWaitTime: 3
   WPProximity: 0.1
 --- !u!65 &1258526246315744385
@@ -259,27 +258,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &6330885221667707559
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5722678548559241120}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 0.25, z: 1}
-  m_Center: {x: 0, y: 0.65, z: 0}
 --- !u!54 &1207873698084300901
 Rigidbody:
   m_ObjectHideFlags: 0
