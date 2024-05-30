@@ -1,11 +1,11 @@
 using System.Collections;
-using System.Linq;
 using UnityEngine;
 
 public class MovingPlatform : MonoBehaviour
 {
     [Header("Waypoints")]
     public Transform[] waypoints;
+
 
     [Header("Moving Platform Details")]
     public float moveSpeed = 5f;
@@ -19,10 +19,19 @@ public class MovingPlatform : MonoBehaviour
 
     private Rigidbody rb;
 
+    private Transform originalParent;
+
+    private Transform playerHolder;
+
     private void Start()
     {
         transform.position = waypoints[currentIndex].position;
         rb = GetComponent<Rigidbody>();
+
+        GameObject empty = new GameObject("Player Holder");
+
+        playerHolder = empty.transform;
+        playerHolder.transform.SetParent(transform);
     }
 
 
@@ -66,6 +75,31 @@ public class MovingPlatform : MonoBehaviour
 
         canMove = true;
 
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            if (originalParent == null)
+            {
+                originalParent = other.gameObject.transform.parent;
+            }
+            
+
+            other.gameObject.transform.SetParent(playerHolder);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            other.gameObject.transform.SetParent(originalParent);
+            
+            originalParent = null;
+            
+        }
     }
 
 
