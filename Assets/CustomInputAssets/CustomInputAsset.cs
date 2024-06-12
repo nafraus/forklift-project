@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class CustomInputAsset<T> : ScriptableObject
 {
-    private T value;
+    protected T value;
     
     public Action<T> ValueChangedAction;
     
@@ -12,7 +12,7 @@ public class CustomInputAsset<T> : ScriptableObject
         return value;
     }
 
-    public void Write(T val)
+    protected void Write(T val)
     {
         if (!Equals(val, value))
         {

@@ -10,11 +10,11 @@ public class TestingInputs : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            asset.Write(1);
+            //asset.Write(1);
         }
         else
         {
-            asset.Write(0);
+            //asset.Write(0);
         }
     }
 }
