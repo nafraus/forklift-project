@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "CustomInputAsset/float", fileName = "FloatInputAsset")]
 public class FloatInputAsset : CustomInputAsset<float>
 {
-    [SerializeField] public float MinValue;
+    public float MinValue;
 
     public float MaxValue;
 
