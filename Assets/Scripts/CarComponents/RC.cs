@@ -15,6 +15,8 @@ public class RC : MonoBehaviour
     /// <returns> True when f is within the tolerance to zero, false otherwise. </returns>
     private bool IsFloatZero(float f) => Mathf.Abs(f) < KFloatZeroTolerance;
     [ReadOnly] public Vector2 movementInput;
+    
+    /* ==== PUBLIC MEMBERS ==== */
     [Header("Body")] 
     [Tooltip("The distance between the two wheels")]
     public float wheelBase = 1f;
@@ -43,7 +45,7 @@ public class RC : MonoBehaviour
     /// </summary>
     private Vector3 SteerForward => SteerRot * rb.transform.forward;
     
-    // ==== PRIVATE MEMBERS ====
+    /* ==== PRIVATE MEMBERS ==== */
     /// <summary>
     /// The rigidbody of the RC car.
     /// </summary>
@@ -108,13 +110,15 @@ public class RC : MonoBehaviour
         }
         
         // Adjust rotation to match steering angle
-        if (!IsFloatZero(movementInput.y)) // If inputs indicate moving forward/backwards
+        float forwardSpeed = Vector3.Dot(horizontalVel, forward);
+        if (!IsFloatZero(forwardSpeed)) // If XZ velocity aligns with moving forward/backwards
         {
+            // Get pivot modifier, helps determine which side of the car to pivot around
+            float pivotMod = steerAngle * (forwardSpeed > 0 ? 1 : forwardSpeed < 0 ? -1 : 0);
             Vector3 pos = rbTrans.position;
             Vector3 backAxle = pos - forward * (.5f * wheelBase + wheelBaseOffset);
             Vector3 pivotPoint = backAxle + rbTrans.right * 
-                                 ((steerAngle < 0 ? -1 : steerAngle > 0 ? 1 : 0) *
-                                  (movementInput.y < 0 ? -1 : movementInput.y > 0 ? 1 : 0) * turningRadius); 
+                                 ((pivotMod < 0 ? -1 : pivotMod > 0 ? 1 : 0) * turningRadius); 
 
             float deltaRot = movementInput.x * steerAcceleration * 
                              Mathf.Clamp(horizontalVel.magnitude, 0, Time.fixedDeltaTime);
