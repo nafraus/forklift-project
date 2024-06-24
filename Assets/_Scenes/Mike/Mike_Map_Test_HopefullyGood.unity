@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_straight (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.5
@@ -192,6 +196,10 @@ PrefabInstance:
     - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_Name
       value: road_straight (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -257,7 +265,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &35396285
 Transform:
@@ -290,7 +298,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &40597932
 Transform:
@@ -386,6 +394,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_bendSidewalk (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 8592510400210943093, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8968190796509243087, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.5
@@ -442,11 +454,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 259960320}
     m_Modifications:
     - target: {fileID: 23272003993007470, guid: 3d5ed605370cef94790d10fa26fce475, type: 3}
       propertyPath: m_Name
       value: skyscraperC
+      objectReference: {fileID: 0}
+    - target: {fileID: 23272003993007470, guid: 3d5ed605370cef94790d10fa26fce475, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 799808325360725972, guid: 3d5ed605370cef94790d10fa26fce475, type: 3}
       propertyPath: m_LocalScale.z
@@ -497,6 +513,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d5ed605370cef94790d10fa26fce475, type: 3}
+--- !u!4 &89017366 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 799808325360725972, guid: 3d5ed605370cef94790d10fa26fce475, type: 3}
+  m_PrefabInstance: {fileID: 89017365}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &106011586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -508,6 +529,10 @@ PrefabInstance:
     - target: {fileID: 8592510400210943093, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
       propertyPath: m_Name
       value: road_bendSidewalk (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8592510400210943093, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8968190796509243087, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -571,6 +596,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_bendSidewalk (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 8592510400210943093, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8968190796509243087, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.5
@@ -632,6 +661,10 @@ PrefabInstance:
     - target: {fileID: 8592510400210943093, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
       propertyPath: m_Name
       value: road_bendSidewalk (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8592510400210943093, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8968190796509243087, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -695,6 +728,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_straight (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.5
@@ -756,6 +793,10 @@ PrefabInstance:
     - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_Name
       value: road_straight (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -819,6 +860,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_straight (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.5
@@ -880,6 +925,10 @@ PrefabInstance:
     - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_Name
       value: road_straight (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1053,7 +1102,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &259960320
 Transform:
@@ -1067,7 +1116,26 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2065856553}
+  - {fileID: 1763479254}
+  - {fileID: 89017366}
+  - {fileID: 1836920410}
+  - {fileID: 366557688}
+  - {fileID: 1129394803}
+  - {fileID: 745541523}
+  - {fileID: 1012530830}
+  - {fileID: 1417641498}
+  - {fileID: 2003329570}
+  - {fileID: 1091168646}
+  - {fileID: 2034656444}
+  - {fileID: 727165773}
+  - {fileID: 1938664128}
+  - {fileID: 1622854160}
+  - {fileID: 1911169850}
+  - {fileID: 1051688579}
+  - {fileID: 447624671}
+  - {fileID: 926542016}
   m_Father: {fileID: 35396285}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &261508119
@@ -1190,6 +1258,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_bendSidewalk (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8592510400210943093, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8968190796509243087, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.5
@@ -1252,6 +1324,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_straight (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.5
@@ -1313,6 +1389,10 @@ PrefabInstance:
     - target: {fileID: 8592510400210943093, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
       propertyPath: m_Name
       value: road_bendSidewalk (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8592510400210943093, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8968190796509243087, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1484,6 +1564,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_straight (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.5
@@ -1540,11 +1624,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 259960320}
     m_Modifications:
     - target: {fileID: 7018085241327742678, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
       propertyPath: m_Name
       value: large_buildingB (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018085241327742678, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7651316680117728364, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1591,6 +1679,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
+--- !u!4 &366557688 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7651316680117728364, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
+  m_PrefabInstance: {fileID: 366557687}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &372693779
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1602,6 +1695,10 @@ PrefabInstance:
     - target: {fileID: 8592510400210943093, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
       propertyPath: m_Name
       value: road_bendSidewalk (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8592510400210943093, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8968190796509243087, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1659,11 +1756,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 259960320}
     m_Modifications:
     - target: {fileID: 23272003993007470, guid: 3d5ed605370cef94790d10fa26fce475, type: 3}
       propertyPath: m_Name
       value: skyscraperC (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 23272003993007470, guid: 3d5ed605370cef94790d10fa26fce475, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 799808325360725972, guid: 3d5ed605370cef94790d10fa26fce475, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1683,7 +1784,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 799808325360725972, guid: 3d5ed605370cef94790d10fa26fce475, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 799808325360725972, guid: 3d5ed605370cef94790d10fa26fce475, type: 3}
       propertyPath: m_LocalRotation.y
@@ -1710,6 +1811,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d5ed605370cef94790d10fa26fce475, type: 3}
+--- !u!4 &447624671 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 799808325360725972, guid: 3d5ed605370cef94790d10fa26fce475, type: 3}
+  m_PrefabInstance: {fileID: 447624670}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &464314467
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1721,6 +1827,10 @@ PrefabInstance:
     - target: {fileID: 6055895606526438066, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
       propertyPath: m_Name
       value: road_slantHigh (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055895606526438066, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6863780893906645000, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1784,6 +1894,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_crossroadPath (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2694250943066462099, guid: ce022af2e6527404ba89690ef19cd687, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3325968083504106793, guid: ce022af2e6527404ba89690ef19cd687, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.5
@@ -1845,6 +1959,10 @@ PrefabInstance:
     - target: {fileID: 6055895606526438066, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
       propertyPath: m_Name
       value: road_slantHigh (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055895606526438066, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6863780893906645000, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1908,6 +2026,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_straight (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.5
@@ -1969,6 +2091,10 @@ PrefabInstance:
     - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_Name
       value: road_straight (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2032,6 +2158,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_crossroadPath (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2694250943066462099, guid: ce022af2e6527404ba89690ef19cd687, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3325968083504106793, guid: ce022af2e6527404ba89690ef19cd687, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.5
@@ -2093,6 +2223,10 @@ PrefabInstance:
     - target: {fileID: 8592510400210943093, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
       propertyPath: m_Name
       value: road_bendSidewalk (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8592510400210943093, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8968190796509243087, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2156,6 +2290,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_slantHigh (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 6055895606526438066, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6863780893906645000, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.5
@@ -2217,6 +2355,10 @@ PrefabInstance:
     - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_Name
       value: road_straight (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2280,6 +2422,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_slantHigh
       objectReference: {fileID: 0}
+    - target: {fileID: 6055895606526438066, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6863780893906645000, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.5
@@ -2341,6 +2487,10 @@ PrefabInstance:
     - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_Name
       value: road_straight (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2404,6 +2554,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_bendSidewalk (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8592510400210943093, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8968190796509243087, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.5
@@ -2466,6 +2620,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_slantHigh (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6055895606526438066, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6863780893906645000, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -2522,11 +2680,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 259960320}
     m_Modifications:
     - target: {fileID: 8412406389625846825, guid: d61e315841b02054c80982b6a87fabfe, type: 3}
       propertyPath: m_Name
       value: skyscraperA (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8412406389625846825, guid: d61e315841b02054c80982b6a87fabfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9220293021062375059, guid: d61e315841b02054c80982b6a87fabfe, type: 3}
       propertyPath: m_LocalScale.z
@@ -2577,17 +2739,26 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d61e315841b02054c80982b6a87fabfe, type: 3}
+--- !u!4 &727165773 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9220293021062375059, guid: d61e315841b02054c80982b6a87fabfe, type: 3}
+  m_PrefabInstance: {fileID: 727165772}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &745541522
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 259960320}
     m_Modifications:
     - target: {fileID: 7018085241327742678, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
       propertyPath: m_Name
       value: large_buildingB (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018085241327742678, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7651316680117728364, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2634,6 +2805,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
+--- !u!4 &745541523 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7651316680117728364, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
+  m_PrefabInstance: {fileID: 745541522}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &746479039
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2645,6 +2821,10 @@ PrefabInstance:
     - target: {fileID: 6055895606526438066, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
       propertyPath: m_Name
       value: road_slantHigh (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055895606526438066, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6863780893906645000, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2748,6 +2928,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_end
       objectReference: {fileID: 0}
+    - target: {fileID: 5612118694661730802, guid: 42cacfbc7a95e214c94f0cea5f986ed0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2769,6 +2953,10 @@ PrefabInstance:
     - target: {fileID: 6055895606526438066, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
       propertyPath: m_Name
       value: road_slantHigh (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055895606526438066, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6863780893906645000, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2832,6 +3020,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_straight (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.5
@@ -2893,6 +3085,10 @@ PrefabInstance:
     - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_Name
       value: road_straight (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2956,6 +3152,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_straight (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.5
@@ -3017,6 +3217,10 @@ PrefabInstance:
     - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_Name
       value: road_straight (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3080,6 +3284,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_straight (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.5
@@ -3136,11 +3344,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 259960320}
     m_Modifications:
     - target: {fileID: 23272003993007470, guid: 3d5ed605370cef94790d10fa26fce475, type: 3}
       propertyPath: m_Name
       value: skyscraperC (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 23272003993007470, guid: 3d5ed605370cef94790d10fa26fce475, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 799808325360725972, guid: 3d5ed605370cef94790d10fa26fce475, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3160,7 +3372,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 799808325360725972, guid: 3d5ed605370cef94790d10fa26fce475, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 799808325360725972, guid: 3d5ed605370cef94790d10fa26fce475, type: 3}
       propertyPath: m_LocalRotation.y
@@ -3187,6 +3399,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d5ed605370cef94790d10fa26fce475, type: 3}
+--- !u!4 &926542016 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 799808325360725972, guid: 3d5ed605370cef94790d10fa26fce475, type: 3}
+  m_PrefabInstance: {fileID: 926542015}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &975774064
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3198,6 +3415,10 @@ PrefabInstance:
     - target: {fileID: 6055895606526438066, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
       propertyPath: m_Name
       value: road_slantHigh (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055895606526438066, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6863780893906645000, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3255,11 +3476,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 259960320}
     m_Modifications:
     - target: {fileID: 7018085241327742678, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
       propertyPath: m_Name
       value: large_buildingB (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018085241327742678, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7651316680117728364, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3306,6 +3531,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
+--- !u!4 &1012530830 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7651316680117728364, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
+  m_PrefabInstance: {fileID: 1012530829}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1013266614
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3317,6 +3547,10 @@ PrefabInstance:
     - target: {fileID: 6055895606526438066, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
       propertyPath: m_Name
       value: road_slantHigh (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055895606526438066, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6863780893906645000, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3374,11 +3608,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 259960320}
     m_Modifications:
     - target: {fileID: 23272003993007470, guid: 3d5ed605370cef94790d10fa26fce475, type: 3}
       propertyPath: m_Name
       value: skyscraperC (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 23272003993007470, guid: 3d5ed605370cef94790d10fa26fce475, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 799808325360725972, guid: 3d5ed605370cef94790d10fa26fce475, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3398,7 +3636,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 799808325360725972, guid: 3d5ed605370cef94790d10fa26fce475, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 799808325360725972, guid: 3d5ed605370cef94790d10fa26fce475, type: 3}
       propertyPath: m_LocalRotation.y
@@ -3425,17 +3663,26 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d5ed605370cef94790d10fa26fce475, type: 3}
+--- !u!4 &1051688579 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 799808325360725972, guid: 3d5ed605370cef94790d10fa26fce475, type: 3}
+  m_PrefabInstance: {fileID: 1051688578}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1091168645
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 259960320}
     m_Modifications:
     - target: {fileID: 255426074113489227, guid: 917d53ffac0b4a741962d41bc5e2ae25, type: 3}
       propertyPath: m_Name
       value: skyscraperF
+      objectReference: {fileID: 0}
+    - target: {fileID: 255426074113489227, guid: 917d53ffac0b4a741962d41bc5e2ae25, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 630684292021249009, guid: 917d53ffac0b4a741962d41bc5e2ae25, type: 3}
       propertyPath: m_LocalScale.z
@@ -3486,6 +3733,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 917d53ffac0b4a741962d41bc5e2ae25, type: 3}
+--- !u!4 &1091168646 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 630684292021249009, guid: 917d53ffac0b4a741962d41bc5e2ae25, type: 3}
+  m_PrefabInstance: {fileID: 1091168645}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1100486758
 GameObject:
   m_ObjectHideFlags: 0
@@ -3524,11 +3776,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 259960320}
     m_Modifications:
     - target: {fileID: 7018085241327742678, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
       propertyPath: m_Name
       value: large_buildingB (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018085241327742678, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7651316680117728364, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3575,6 +3831,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
+--- !u!4 &1129394803 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7651316680117728364, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
+  m_PrefabInstance: {fileID: 1129394802}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1147390000
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3586,6 +3847,10 @@ PrefabInstance:
     - target: {fileID: 8592510400210943093, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
       propertyPath: m_Name
       value: road_bendSidewalk (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8592510400210943093, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8968190796509243087, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3649,6 +3914,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_straight (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.5
@@ -3710,6 +3979,10 @@ PrefabInstance:
     - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_Name
       value: road_straight (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3773,6 +4046,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_slantHigh (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 6055895606526438066, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6863780893906645000, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.5
@@ -3834,6 +4111,10 @@ PrefabInstance:
     - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_Name
       value: road_straight
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3897,6 +4178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_bendSidewalk (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8592510400210943093, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8968190796509243087, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.5
@@ -3958,6 +4243,10 @@ PrefabInstance:
     - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_Name
       value: road_straight (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4021,6 +4310,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_straight (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.5
@@ -4082,6 +4375,10 @@ PrefabInstance:
     - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_Name
       value: road_straight (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4145,6 +4442,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_bendSidewalk
       objectReference: {fileID: 0}
+    - target: {fileID: 8592510400210943093, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8968190796509243087, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.5
@@ -4206,6 +4507,10 @@ PrefabInstance:
     - target: {fileID: 6055895606526438066, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
       propertyPath: m_Name
       value: road_slantHigh (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055895606526438066, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6863780893906645000, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4269,6 +4574,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_bendSidewalk (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8592510400210943093, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8968190796509243087, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.5
@@ -4330,6 +4639,10 @@ PrefabInstance:
     - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_Name
       value: road_straight (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4393,6 +4706,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_bendSidewalk (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8592510400210943093, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8968190796509243087, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.5
@@ -4455,6 +4772,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_crossroadPath (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2694250943066462099, guid: ce022af2e6527404ba89690ef19cd687, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3325968083504106793, guid: ce022af2e6527404ba89690ef19cd687, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.5
@@ -4511,11 +4832,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 259960320}
     m_Modifications:
     - target: {fileID: 7018085241327742678, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
       propertyPath: m_Name
       value: large_buildingB (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018085241327742678, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7651316680117728364, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4562,6 +4887,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
+--- !u!4 &1417641498 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7651316680117728364, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
+  m_PrefabInstance: {fileID: 1417641497}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1428174600
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4573,6 +4903,10 @@ PrefabInstance:
     - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_Name
       value: road_straight (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4636,6 +4970,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_crossroadPath (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2694250943066462099, guid: ce022af2e6527404ba89690ef19cd687, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3325968083504106793, guid: ce022af2e6527404ba89690ef19cd687, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.5
@@ -4697,6 +5035,10 @@ PrefabInstance:
     - target: {fileID: 6055895606526438066, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
       propertyPath: m_Name
       value: road_slantHigh (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055895606526438066, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6863780893906645000, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4760,6 +5102,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_straight (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.5
@@ -4821,6 +5167,10 @@ PrefabInstance:
     - target: {fileID: 8592510400210943093, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
       propertyPath: m_Name
       value: road_bendSidewalk (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8592510400210943093, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8968190796509243087, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4884,6 +5234,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_straight (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.5
@@ -4940,11 +5294,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 259960320}
     m_Modifications:
     - target: {fileID: 1467144363388649228, guid: ee35c08380d8f2844981d9a5ec3e2fb3, type: 3}
       propertyPath: m_Name
       value: large_buildingD (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467144363388649228, guid: ee35c08380d8f2844981d9a5ec3e2fb3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2240409607380886966, guid: ee35c08380d8f2844981d9a5ec3e2fb3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4964,7 +5322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2240409607380886966, guid: ee35c08380d8f2844981d9a5ec3e2fb3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2240409607380886966, guid: ee35c08380d8f2844981d9a5ec3e2fb3, type: 3}
       propertyPath: m_LocalRotation.y
@@ -4991,6 +5349,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee35c08380d8f2844981d9a5ec3e2fb3, type: 3}
+--- !u!4 &1622854160 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2240409607380886966, guid: ee35c08380d8f2844981d9a5ec3e2fb3, type: 3}
+  m_PrefabInstance: {fileID: 1622854159}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1701351161
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5002,6 +5365,10 @@ PrefabInstance:
     - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_Name
       value: road_straight (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5065,6 +5432,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_straight (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.5
@@ -5127,6 +5498,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_bendSidewalk (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8592510400210943093, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8968190796509243087, guid: 4e87a03159cf2844298559dd1ae6dd0d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.5
@@ -5183,7 +5558,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 259960320}
     m_Modifications:
     - target: {fileID: 8178850061292550854, guid: 9b21466ea0f305e4683c242dcd5f9a27, type: 3}
       propertyPath: m_LocalScale.z
@@ -5195,7 +5570,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8178850061292550854, guid: 9b21466ea0f305e4683c242dcd5f9a27, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.00000047683716
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8178850061292550854, guid: 9b21466ea0f305e4683c242dcd5f9a27, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5233,11 +5608,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: skyscraperB
       objectReference: {fileID: 0}
+    - target: {fileID: 8848109132829843580, guid: 9b21466ea0f305e4683c242dcd5f9a27, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b21466ea0f305e4683c242dcd5f9a27, type: 3}
+--- !u!4 &1763479254 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8178850061292550854, guid: 9b21466ea0f305e4683c242dcd5f9a27, type: 3}
+  m_PrefabInstance: {fileID: 1763479253}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1794036001
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5249,6 +5633,10 @@ PrefabInstance:
     - target: {fileID: 2694250943066462099, guid: ce022af2e6527404ba89690ef19cd687, type: 3}
       propertyPath: m_Name
       value: road_crossroadPath
+      objectReference: {fileID: 0}
+    - target: {fileID: 2694250943066462099, guid: ce022af2e6527404ba89690ef19cd687, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3325968083504106793, guid: ce022af2e6527404ba89690ef19cd687, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5398,11 +5786,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 259960320}
     m_Modifications:
     - target: {fileID: 7018085241327742678, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
       propertyPath: m_Name
       value: large_buildingB
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018085241327742678, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7651316680117728364, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5422,7 +5814,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7651316680117728364, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7651316680117728364, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
       propertyPath: m_LocalRotation.y
@@ -5449,6 +5841,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
+--- !u!4 &1836920410 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7651316680117728364, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
+  m_PrefabInstance: {fileID: 1836920409}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1841131171
 GameObject:
   m_ObjectHideFlags: 0
@@ -5609,6 +6006,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_end
       objectReference: {fileID: 0}
+    - target: {fileID: 5612118694661730802, guid: 42cacfbc7a95e214c94f0cea5f986ed0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5625,11 +6026,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 259960320}
     m_Modifications:
     - target: {fileID: 1467144363388649228, guid: ee35c08380d8f2844981d9a5ec3e2fb3, type: 3}
       propertyPath: m_Name
       value: large_buildingD (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467144363388649228, guid: ee35c08380d8f2844981d9a5ec3e2fb3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2240409607380886966, guid: ee35c08380d8f2844981d9a5ec3e2fb3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5649,7 +6054,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2240409607380886966, guid: ee35c08380d8f2844981d9a5ec3e2fb3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2240409607380886966, guid: ee35c08380d8f2844981d9a5ec3e2fb3, type: 3}
       propertyPath: m_LocalRotation.y
@@ -5676,6 +6081,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee35c08380d8f2844981d9a5ec3e2fb3, type: 3}
+--- !u!4 &1911169850 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2240409607380886966, guid: ee35c08380d8f2844981d9a5ec3e2fb3, type: 3}
+  m_PrefabInstance: {fileID: 1911169849}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1925172715
 GameObject:
   m_ObjectHideFlags: 0
@@ -5803,11 +6213,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 259960320}
     m_Modifications:
     - target: {fileID: 1467144363388649228, guid: ee35c08380d8f2844981d9a5ec3e2fb3, type: 3}
       propertyPath: m_Name
       value: large_buildingD
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467144363388649228, guid: ee35c08380d8f2844981d9a5ec3e2fb3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2240409607380886966, guid: ee35c08380d8f2844981d9a5ec3e2fb3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5827,7 +6241,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2240409607380886966, guid: ee35c08380d8f2844981d9a5ec3e2fb3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2240409607380886966, guid: ee35c08380d8f2844981d9a5ec3e2fb3, type: 3}
       propertyPath: m_LocalRotation.y
@@ -5854,17 +6268,26 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee35c08380d8f2844981d9a5ec3e2fb3, type: 3}
+--- !u!4 &1938664128 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2240409607380886966, guid: ee35c08380d8f2844981d9a5ec3e2fb3, type: 3}
+  m_PrefabInstance: {fileID: 1938664127}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2003329569
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 259960320}
     m_Modifications:
     - target: {fileID: 7018085241327742678, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
       propertyPath: m_Name
       value: large_buildingB (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018085241327742678, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7651316680117728364, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5884,7 +6307,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7651316680117728364, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7651316680117728364, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
       propertyPath: m_LocalRotation.y
@@ -5911,17 +6334,26 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
+--- !u!4 &2003329570 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7651316680117728364, guid: 0b340b859d8253444bbc22839810cb26, type: 3}
+  m_PrefabInstance: {fileID: 2003329569}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2034656443
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 259960320}
     m_Modifications:
     - target: {fileID: 8412406389625846825, guid: d61e315841b02054c80982b6a87fabfe, type: 3}
       propertyPath: m_Name
       value: skyscraperA
+      objectReference: {fileID: 0}
+    - target: {fileID: 8412406389625846825, guid: d61e315841b02054c80982b6a87fabfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9220293021062375059, guid: d61e315841b02054c80982b6a87fabfe, type: 3}
       propertyPath: m_LocalScale.z
@@ -5972,6 +6404,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d61e315841b02054c80982b6a87fabfe, type: 3}
+--- !u!4 &2034656444 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9220293021062375059, guid: d61e315841b02054c80982b6a87fabfe, type: 3}
+  m_PrefabInstance: {fileID: 2034656443}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2060981459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5983,6 +6420,10 @@ PrefabInstance:
     - target: {fileID: 6055895606526438066, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
       propertyPath: m_Name
       value: road_slantHigh (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055895606526438066, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6863780893906645000, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6040,19 +6481,23 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 259960320}
     m_Modifications:
     - target: {fileID: 8339305535152248090, guid: 89a996047d60e0545a86842a24d2d642, type: 3}
       propertyPath: m_Name
       value: skyscraperD
       objectReference: {fileID: 0}
+    - target: {fileID: 8339305535152248090, guid: 89a996047d60e0545a86842a24d2d642, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8714740843971514272, guid: 89a996047d60e0545a86842a24d2d642, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.4
+      value: 1.3999999
       objectReference: {fileID: 0}
     - target: {fileID: 8714740843971514272, guid: 89a996047d60e0545a86842a24d2d642, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.4
+      value: 1.3999999
       objectReference: {fileID: 0}
     - target: {fileID: 8714740843971514272, guid: 89a996047d60e0545a86842a24d2d642, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6099,6 +6544,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89a996047d60e0545a86842a24d2d642, type: 3}
+--- !u!4 &2065856553 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8714740843971514272, guid: 89a996047d60e0545a86842a24d2d642, type: 3}
+  m_PrefabInstance: {fileID: 2065856552}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2093122454
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6110,6 +6560,10 @@ PrefabInstance:
     - target: {fileID: 6055895606526438066, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
       propertyPath: m_Name
       value: road_slantHigh (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055895606526438066, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6863780893906645000, guid: 5dbdaad184917fe48a050d1786a76292, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6173,6 +6627,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_straight (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 7408302213597397344, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7891506322049784794, guid: b9705ed53745eed428b1601e9abf62fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.5
@@ -6234,22 +6692,3 @@ SceneRoots:
   - {fileID: 248262276}
   - {fileID: 304938027}
   - {fileID: 1100486759}
-  - {fileID: 2065856552}
-  - {fileID: 1763479253}
-  - {fileID: 89017365}
-  - {fileID: 1836920409}
-  - {fileID: 366557687}
-  - {fileID: 1129394802}
-  - {fileID: 745541522}
-  - {fileID: 1012530829}
-  - {fileID: 1417641497}
-  - {fileID: 2003329569}
-  - {fileID: 1091168645}
-  - {fileID: 2034656443}
-  - {fileID: 727165772}
-  - {fileID: 1938664127}
-  - {fileID: 1622854159}
-  - {fileID: 1911169849}
-  - {fileID: 1051688578}
-  - {fileID: 447624670}
-  - {fileID: 926542015}
