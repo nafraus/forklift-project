@@ -36,6 +36,8 @@ public class RC : MonoBehaviour
     public float maxSteerAngle = 24f;
     [Tooltip("The tightest turning radius the car is capable of.")]
     public float turningRadius = 5f;
+
+    [SerializeField] private Vector2InputAsset input;
     /// <summary>
     /// Rotation of steering angle.
     /// </summary>
@@ -70,8 +72,10 @@ public class RC : MonoBehaviour
     void Update()
     {
         // Get inputs
-        movementInput = 
-            new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        movementInput = input.Read(); 
+        
+        Debug.Log($"X: {movementInput.x} Y: {movementInput.y}");
+        
         
         // Update steering value
         if (!IsFloatZero(movementInput.x)) // If input is provided this frame

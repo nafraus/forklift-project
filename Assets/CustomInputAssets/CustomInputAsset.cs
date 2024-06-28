@@ -4,7 +4,7 @@ using UnityEngine;
 public class CustomInputAsset<T> : ScriptableObject
 {
     protected T value;
-    
+
     public Action<T> ValueChangedAction;
     
     public T Read()
@@ -17,7 +17,7 @@ public class CustomInputAsset<T> : ScriptableObject
         if (!Equals(val, value))
         {
             this.value = val;
-            ValueChangedAction.Invoke(this.value);   
+            if(ValueChangedAction!= null) ValueChangedAction.Invoke(this.value);   
         }
     }
 }
