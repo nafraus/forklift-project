@@ -1,7 +1,6 @@
 using System;
+using SqdthUtils.Vectors;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.Serialization;
 
 public class SpoonLift : MonoBehaviour
 {
@@ -83,7 +82,7 @@ public class SpoonLift : MonoBehaviour
                 
             // Do gas
             if (canGas && Inputs.y > 0 && 
-                rb.linearVelocity.NegateDirection(Vector3.up).magnitude <= maxSpeed)
+                rb.linearVelocity.NegatedDirection(Vector3.up).magnitude <= maxSpeed)
             {
                 rb.AddForceAtPosition((wheelTrans.forward) * acceleration, 
                     wheelTrans.position, ForceMode.Force);
@@ -93,7 +92,7 @@ public class SpoonLift : MonoBehaviour
             if (canBreak && Inputs.y < 0)
             {
                 rb.AddForceAtPosition(
-                    -rb.GetPointVelocity(wheelTrans.position).NegateDirection(Vector3.up) * 
+                    -rb.GetPointVelocity(wheelTrans.position).NegatedDirection(Vector3.up) * 
                     deceleration, wheelTrans.position
                 );
             }

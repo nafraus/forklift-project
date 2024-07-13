@@ -1,4 +1,5 @@
 using NaughtyAttributes;
+using SqdthUtils.Vectors;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -7,7 +8,7 @@ public class RC : MonoBehaviour
     /// <summary>
     /// Used to evaluate whether a float is close to zero
     /// </summary>
-    private const float KFloatZeroTolerance = .01f;
+    private const float KFloatZeroTolerance = .1f;
     /// <summary>
     /// Evaluates whether a float is close to zero using the constant tolerance value.
     /// </summary>
@@ -32,12 +33,14 @@ public class RC : MonoBehaviour
     [Header("Angular Motion")]
     [Tooltip("The rate at which the wheels can change direction.")]
     public float steerAcceleration  =  90f;
-    [Tooltip("The maximum angle a wheel can turn in either direction.")]
-    public float maxSteerAngle = 24f;
-    [Tooltip("The tightest turning radius the car is capable of.")]
-    public float turningRadius = 5f;
+    [Tooltip("The maximum angle a wheel can turn in either direction. " +
+             "Max steering angle of 45 deg results in a turning radius " +
+             "equal to the wheelbase.")]
+    public float maxSteerAngle = 45f;
 
+    [Tooltip("The scriptable object used for complex input gathering.")]
     [SerializeField] private Vector2InputAsset input;
+    
     /// <summary>
     /// Rotation of steering angle.
     /// </summary>
@@ -46,6 +49,11 @@ public class RC : MonoBehaviour
     /// Wheel forward direction. 
     /// </summary>
     private Vector3 SteerForward => SteerRot * rb.transform.forward;
+    /// <summary>
+    /// Car turning radius
+    /// </summary>
+    private float TurningRadius => 
+        Mathf.Abs(wheelBase / Mathf.Tan(Mathf.Deg2Rad * maxSteerAngle));
     
     /* ==== PRIVATE MEMBERS ==== */
     /// <summary>
@@ -74,22 +82,28 @@ public class RC : MonoBehaviour
         // Get inputs
         movementInput = input.Read(); 
         
-        Debug.Log($"X: {movementInput.x} Y: {movementInput.y}");
+        // ============ TESTING INPUT DEBUG ============
+        // if (movementInput.magnitude > 0)
+        //     Debug.Log($"X: {movementInput.x} Y: {movementInput.y}");
         
         
         // Update steering value
-        if (!IsFloatZero(movementInput.x)) // If input is provided this frame
+        if (!IsFloatZero(movementInput
+                .x)) // If input is provided this frame
         {
             steerAngle =
-                Mathf.Clamp(steerAngle + movementInput.x * steerAcceleration * Time.deltaTime, -maxSteerAngle, maxSteerAngle);
+                Mathf.Clamp(
+                    steerAngle + movementInput.x * steerAcceleration *
+                    Time.deltaTime, -maxSteerAngle, maxSteerAngle);
         }
         else // If input is not provided this frame
         {
             // Do half acceleration in opposite direction
-            steerAngle = Mathf.Lerp(steerAngle, 0, Time.deltaTime * steerAcceleration / 2);
-            
+            steerAngle = Mathf.Lerp(steerAngle, 0,
+                Time.deltaTime * steerAcceleration / 2);
+
             // If steering angle is close enough to zero, set it to zero;
-            if (Mathf.Abs(steerAngle) < 5) 
+            if (Mathf.Abs(steerAngle) < 5)
             {
                 steerAngle = 0;
             }
@@ -100,10 +114,11 @@ public class RC : MonoBehaviour
     {
         // THERE IS NO GROUNDED CHECK RIGHT NOW, IM DITCHING TONS OF "REALISTIC"
         // MECHANICS IN FAVOR OF JUST GETTING THIS WORKING IN GAME. ALSO OUR NEW
-        // DESIGN IS MUCH LESS REALISTIC THAN THE OG FORKLIFT IDEA - Keith L.
+        // DESIGN IS MUCH LESS REALISTIC THAN THE ORIGINAL FORKLIFT IDEA - Keith
 
-        Vector3 horizontalVel = rb.linearVelocity.NegateDirection(Vector3.up);
+        Vector3 horizontalVel = rb.linearVelocity.NegatedDirection(Vector3.up);
         Vector3 forward = rbTrans.forward;
+        Vector3 right = rbTrans.right;
         
         // Do linear acceleration
         if (horizontalVel.magnitude < maxSpeed)
@@ -114,7 +129,7 @@ public class RC : MonoBehaviour
         }
         
         // Adjust rotation to match steering angle
-        float forwardSpeed = Vector3.Dot(horizontalVel, forward);
+        float forwardSpeed = Vector3.Dot(rb.linearVelocity, forward);
         if (!IsFloatZero(forwardSpeed)) // If XZ velocity aligns with moving forward/backwards
         {
             // Get pivot modifier, helps determine which side of the car to pivot around
@@ -122,7 +137,7 @@ public class RC : MonoBehaviour
             Vector3 pos = rbTrans.position;
             Vector3 backAxle = pos - forward * (.5f * wheelBase + wheelBaseOffset);
             Vector3 pivotPoint = backAxle + rbTrans.right * 
-                                 ((pivotMod < 0 ? -1 : pivotMod > 0 ? 1 : 0) * turningRadius); 
+                                 ((pivotMod < 0 ? -1 : pivotMod > 0 ? 1 : 0) * TurningRadius); 
 
             float deltaRot = movementInput.x * steerAcceleration * 
                              Mathf.Clamp(horizontalVel.magnitude, 0, Time.fixedDeltaTime);
@@ -139,9 +154,13 @@ public class RC : MonoBehaviour
         }
         
         // Reduce drifting momentum
-        rb.AddForce(-rb.linearVelocity.NegateDirection(forward), ForceMode.VelocityChange);
+        rb.AddForce(-rb.linearVelocity.IsolatedDirection(right) *
+                    Mathf.Clamp(forwardSpeed / maxSpeed, 1, 2), 
+            ForceMode.VelocityChange);
     }
 
+    #if UNITY_EDITOR
+    
     private void OnDrawGizmos()
     {
         if (rb == null) rb = GetComponent<Rigidbody>();
@@ -162,4 +181,6 @@ public class RC : MonoBehaviour
         Gizmos.DrawLine(fPos + right, fPos - right);
         Gizmos.DrawLine(bPos + right, bPos - right);
     }
+    
+    #endif
 }

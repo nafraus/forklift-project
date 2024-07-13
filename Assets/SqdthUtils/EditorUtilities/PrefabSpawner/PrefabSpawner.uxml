@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <uie:Toolbar name="Toolbar" style="justify-content: space-between; width: 100%; flex-wrap: nowrap; flex-direction: row;">
+        <uie:ToolbarToggle focusable="false" label="Surface Oriented" value="true" style="border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; flex-shrink: 50; flex-grow: 50;" />
+        <uie:ToolbarToggle focusable="false" label="Grid Snapped" name="SnapToGrid" style="flex-shrink: 50; flex-grow: 50;" />
+        <uie:ToolbarToggle focusable="false" label="Spawn As Prefab" name="SpawnAsPrefab" value="false" style="justify-content: flex-start; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; flex-shrink: 50; flex-grow: 50;" />
+    </uie:Toolbar>
+    <ui:VisualElement name="General" style="flex-grow: 1; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; -unity-text-align: upper-center; max-width: 100%; max-height: 100px;">
+        <ui:VisualElement name="GeneralTitleBar" style="flex-grow: 1; flex-direction: row; justify-content: space-between; align-self: stretch; align-items: center;">
+            <ui:Label tabindex="-1" text="General" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GeneralLabel" style="padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px; -unity-text-align: middle-left; -unity-font-style: bold; font-size: 14px;" />
+            <ui:Toggle label="On/Off" name="Active" value="false" style="margin-left: -36px;" />
+        </ui:VisualElement>
+        <uie:ObjectField label="Spawnable Prefab" name="SpawnablePrefab" type="UnityEngine.GameObject, UnityEngine.CoreModule" style="padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; -unity-text-align: upper-left;" />
+        <uie:ObjectField label="Parent Transform" name="ParentTransform" type="UnityEngine.Transform, UnityEngine.CoreModule" style="padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; -unity-text-align: upper-left;" />
+        <uie:LayerMaskField label="Raycast LayerMask" name="RaycastLayerMask" value="-1" style="padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; -unity-text-align: upper-left;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="Spawning" style="flex-grow: 1; -unity-text-align: upper-center; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; align-items: stretch; align-self: stretch; max-width: 100%; max-height: 200px; flex-wrap: nowrap; font-size: 12px;">
+        <ui:Label tabindex="-1" text="Modifications" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SpawningLabel" style="padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px; -unity-text-align: upper-left; -unity-font-style: bold; font-size: 14px;" />
+        <ui:Vector3Field label="Minimum Rotation" name="MinRotation" x="0" y="0" z="0" style="padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; flex-direction: row; justify-content: flex-start; align-items: stretch; -unity-text-align: upper-left;" />
+        <ui:Vector3Field label="Maximum Rotation" name="MaxRotation" x="0" y="0" z="0" style="padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; -unity-text-align: upper-left;" />
+    </ui:VisualElement>
+</ui:UXML>
