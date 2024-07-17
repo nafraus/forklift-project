@@ -6,8 +6,9 @@ public class InteractableValueReader : MonoBehaviour
     [SerializeField] private HingeJoint joint;
 
     [SerializeField] private FloatInputAsset inputAsset;
+    
     //To be serialized
-    private bool useDynamicLimits = false;
+    [SerializeField] private bool useDynamicLimits = false; //Can't remember what this is used for :(
 
     private float upperLimit;
     private float lowerLimit;
