@@ -82,7 +82,7 @@ public class SpoonLift : MonoBehaviour
                 
             // Do gas
             if (canGas && Inputs.y > 0 && 
-                rb.linearVelocity.NegatedDirection(Vector3.up).magnitude <= maxSpeed)
+                rb.velocity.NegatedDirection(Vector3.up).magnitude <= maxSpeed)
             {
                 rb.AddForceAtPosition((wheelTrans.forward) * acceleration, 
                     wheelTrans.position, ForceMode.Force);

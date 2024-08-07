@@ -6,6 +6,8 @@ public class CustomInputAsset<T> : ScriptableObject
     protected T value;
 
     public Action<T> ValueChangedAction;
+
+    public bool LogValueOnValueChanged;
     
     public T Read()
     {
@@ -14,10 +16,12 @@ public class CustomInputAsset<T> : ScriptableObject
 
     protected void Write(T val)
     {
+        //move to if statement below once writing is fixed
+        if(LogValueOnValueChanged) Debug.Log(val);
+        
         if (!Equals(val, value))
         {
             this.value = val;
-            if(ValueChangedAction!= null) ValueChangedAction.Invoke(this.value);   
         }
     }
 }

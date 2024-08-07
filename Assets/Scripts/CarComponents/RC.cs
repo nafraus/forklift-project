@@ -116,7 +116,7 @@ public class RC : MonoBehaviour
         // MECHANICS IN FAVOR OF JUST GETTING THIS WORKING IN GAME. ALSO OUR NEW
         // DESIGN IS MUCH LESS REALISTIC THAN THE ORIGINAL FORKLIFT IDEA - Keith
 
-        Vector3 horizontalVel = rb.linearVelocity.NegatedDirection(Vector3.up);
+        Vector3 horizontalVel = rb.velocity.NegatedDirection(Vector3.up);
         Vector3 forward = rbTrans.forward;
         Vector3 right = rbTrans.right;
         
@@ -129,7 +129,7 @@ public class RC : MonoBehaviour
         }
         
         // Adjust rotation to match steering angle
-        float forwardSpeed = Vector3.Dot(rb.linearVelocity, forward);
+        float forwardSpeed = Vector3.Dot(rb.velocity, forward);
         if (!IsFloatZero(forwardSpeed)) // If XZ velocity aligns with moving forward/backwards
         {
             // Get pivot modifier, helps determine which side of the car to pivot around
@@ -150,11 +150,11 @@ public class RC : MonoBehaviour
         // Limit the car's speed in forward direction
         if (Vector3.Dot(horizontalVel, transform.forward) > maxSpeed)
         {
-            rb.linearVelocity = transform.forward * maxSpeed;
+            rb.velocity = transform.forward * maxSpeed;
         }
         
         // Reduce drifting momentum
-        rb.AddForce(-rb.linearVelocity.IsolatedDirection(right) *
+        rb.AddForce(-rb.velocity.IsolatedDirection(right) *
                     Mathf.Clamp(forwardSpeed / maxSpeed, 1, 2), 
             ForceMode.VelocityChange);
     }

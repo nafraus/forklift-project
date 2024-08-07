@@ -7,7 +7,6 @@ public class InteractableValueReader : MonoBehaviour
 
     [SerializeField] private FloatInputAsset inputAsset;
     
-    //To be serialized
     [SerializeField] private bool useDynamicLimits = false; //Can't remember what this is used for :(
 
     private float upperLimit;
@@ -19,11 +18,20 @@ public class InteractableValueReader : MonoBehaviour
         lowerLimit = joint.limits.min;
 
         inputAsset.ValueChangedAction += LogValue;
+        //
     }
 
     private void Update()
     {
-        inputAsset.Write(Mathf.InverseLerp(lowerLimit, upperLimit, joint.angle));
+        //Gets a value from 0-1 of where our joint is angled between the min and max
+        float val = Mathf.InverseLerp(lowerLimit, upperLimit, joint.angle);
+        
+        //Converts the 0-1 value to a -1 to 1 value
+        val -= 0.5f;
+        val *= 2;
+        
+        //Writes the value
+        inputAsset.Write(val);
     }
 
     void LogValue(float value)
