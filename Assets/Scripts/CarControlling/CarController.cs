@@ -138,7 +138,7 @@ public class CarController : MonoBehaviour
             case FiveSpeedTransmission.Park:
             case FiveSpeedTransmission.Neutral:
             {
-                rb.AddForce(-new Vector3(rb.linearVelocity.x, 0, rb.linearVelocity.z), ForceMode.Acceleration);
+                rb.AddForce(-new Vector3(rb.velocity.x, 0, rb.velocity.z), ForceMode.Acceleration);
                 break;
             }
             
@@ -171,7 +171,7 @@ public class CarController : MonoBehaviour
         if (breaking > 0)
         {
             float breakingForce = Mathf.Clamp(breaking * breakPadSurfaceArea, 
-                0, rb.linearVelocity.magnitude);
+                0, rb.velocity.magnitude);
 
             for (int i = 0; i < wheels.Length; i++)
             {

@@ -8,10 +8,15 @@ public class RCCarInputWriter : MonoBehaviour
     public InputMode InputMode;
 
     public Vector2InputAsset InputAsset;
-
+    
+    [Header("XR Controller Inputs")]
     public InputActionReference XRAccelerateAction;
     public InputActionReference XRBrakeAction;
     public InputActionReference XRSteerAction;
+    
+    [Header("Interactable Inputs")]
+    public FloatInputAsset InteractableAccelerationValue;
+    public FloatInputAsset InteractableSteerValue;
     void Update()
     {
         switch (InputMode)
@@ -38,7 +43,7 @@ public class RCCarInputWriter : MonoBehaviour
     }
     void WriteInputFromInteractables()
     {
-        throw new NotImplementedException();
+        InputAsset.Write(new Vector2(InteractableSteerValue.Read(), InteractableAccelerationValue.Read()));
     }
 }
 
