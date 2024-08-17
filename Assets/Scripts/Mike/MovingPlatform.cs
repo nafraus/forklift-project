@@ -1,80 +1,59 @@
+using System;
 using System.Collections;
+using BezierSolution;
 using UnityEngine;
 
+[RequireComponent(typeof(BezierWalkerWithSpeed))]
 public class MovingPlatform : MonoBehaviour
 {
-    [Header("Waypoints")]
-    public Transform[] waypoints;
-
-
-    [Header("Moving Platform Details")]
+    [Header("Moving Platform Details")] 
+    public bool autoMove = true;
     public float moveSpeed = 5f;
     public float endWaitTime = 2f;
-    public float WPProximity = .5f; //How close does the platform need to be in order to increase index
-
-
-    private int currentIndex = 0;
-
-    private bool canMove = true;
-
-    private Rigidbody rb;
-
+    
+    private BezierWalkerWithSpeed walker;
+    
     private Transform originalParent;
-
     private Transform playerHolder;
 
     private void Start()
     {
-        transform.position = waypoints[currentIndex].position;
-        rb = GetComponent<Rigidbody>();
+        walker = GetComponent<BezierWalkerWithSpeed>();
+        walker.NormalizedT = 0;
+        walker.travelMode = TravelMode.Once;
+        walker.onPathCompleted.AddListener(DoPauseAndReverse);
+        walker.speed = autoMove ? moveSpeed : 0;
 
         GameObject empty = new GameObject("Player Holder");
-
         playerHolder = empty.transform;
         playerHolder.transform.SetParent(transform);
     }
 
-
-    void FixedUpdate()
+    public void SetPathProgress(float normalizedT)
     {
-        if (canMove)
-        {
-            MovePlatform();
-        }
+        walker.NormalizedT = normalizedT;
+    }
+    
+    private void DoPauseAndReverse()
+    {
+        if (autoMove) StartCoroutine(PauseAndReverse());
     }
 
-    private void MovePlatform()
+    private IEnumerator PauseAndReverse()
     {
-        if (Vector3.Distance(waypoints[currentIndex].transform.position, transform.position) < WPProximity)
-        {
-            currentIndex++;
-            if (currentIndex >= waypoints.Length)
-            {
-                StartCoroutine(WaitAtEnd());
-                return;
-            }
-        }
-
-        if (canMove)
-        {
-            Vector3 newPosition = Vector3.MoveTowards(transform.position, waypoints[currentIndex].transform.position, moveSpeed * Time.deltaTime);
-            rb.MovePosition(newPosition);
-
-        }
-    }
-
-    private IEnumerator WaitAtEnd()
-    {
-        canMove = false;
-
+        // Stop moving platform
+        walker.speed = 0;
+        
+        // Wait for time
         yield return new WaitForSeconds(endWaitTime);
-
-        //Reverse Waypoint Array and set index to 0
-        System.Array.Reverse(waypoints);
-        currentIndex = 0;
-
-        canMove = true;
-
+        
+        // Start moving again
+        walker.speed = moveSpeed * walker.NormalizedT switch
+        {
+            >= .99f => -1,
+            <= .01f =>  1,
+            _       =>  0
+        };
     }
 
     private void OnTriggerEnter(Collider other)
@@ -85,7 +64,6 @@ public class MovingPlatform : MonoBehaviour
             {
                 originalParent = other.gameObject.transform.parent;
             }
-            
 
             other.gameObject.transform.SetParent(playerHolder);
         }
@@ -101,21 +79,4 @@ public class MovingPlatform : MonoBehaviour
             
         }
     }
-
-
-    private void OnDrawGizmos()
-    {
-        //So it doesn't spaz out when making the moving platform
-        if (waypoints == null || waypoints.Length < 2)
-        {
-            return;
-        }
-
-        Gizmos.color = Color.green;
-        for (int i = 0; i < waypoints.Length - 1; i++)
-        {
-            Gizmos.DrawLine(waypoints[i].position, waypoints[i + 1].position);
-        }
-    }
-
 }

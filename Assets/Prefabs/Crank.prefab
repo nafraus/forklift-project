@@ -27,8 +27,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.54731756, y: 2.0812938, z: 0.51322573}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 11.17, y: 11.17, z: 11.17}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5301881992072276422}
   - {fileID: 2706916972198852535}
@@ -50,6 +50,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hinge: {fileID: 2170935103335628198}
   text: {fileID: 2076828740116536976}
+  maxSumAngleRange: 720
+  onHingeAngleChange:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: MovingPlatform, Assembly-CSharp
+        m_MethodName: SetPathProgress
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onHingeAngleMin:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2179310909363033172}
+        m_TargetAssemblyTypeName: Crank, Assembly-CSharp
+        m_MethodName: TEST_MIN
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onHingeAngleMax:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2179310909363033172}
+        m_TargetAssemblyTypeName: Crank, Assembly-CSharp
+        m_MethodName: TEST_MAX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &894690307406965005
 GameObject:
   m_ObjectHideFlags: 0
@@ -80,7 +126,7 @@ Transform:
   m_GameObject: {fileID: 894690307406965005}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.019317567, y: 0.05370617, z: 0.07677424}
+  m_LocalPosition: {x: 0, y: 0.05370617, z: 0.07677424}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -233,7 +279,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0423, y: 0.1307}
+  m_AnchoredPosition: {x: 0, y: 0.105}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &4832074779034836200
@@ -298,9 +344,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '180
-
-'
+  m_text: XX%
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -334,8 +378,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -403,7 +447,7 @@ Transform:
   m_GameObject: {fileID: 8185661293988199845}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -0.006317556, y: -0.0552938, z: 0.012374282}
+  m_LocalPosition: {x: 0, y: -0.0552938, z: 0.012374282}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -706,7 +750,7 @@ Transform:
   m_GameObject: {fileID: 8806512332402043233}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.006317556, y: 0.0037062168, z: 0.01847428}
+  m_LocalPosition: {x: 0, y: 0.0037062168, z: 0.01847428}
   m_LocalScale: {x: 0.01, y: 0.1, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children: []
