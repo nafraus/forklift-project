@@ -11,26 +11,24 @@ using UnityEngine.Serialization;
 
 public class Crank : MonoBehaviour
 {
+    [SerializeField] private bool limitRange = true;
     [SerializeField] private HingeJoint hinge;
     [SerializeField] private TMP_Text text;
     [SerializeField] private float maxSumAngleRange = 360;
     [SerializeField] private UnityEvent<float> onHingeAngleChange;
+    [SerializeField] private UnityEvent<float> onHingeSum01Change;
     [SerializeField] private UnityEvent onHingeAngleMin;
     [SerializeField] private UnityEvent onHingeAngleMax;
-    private bool canMaxEvent = true;
-    private bool canMinEvent = true;
-    private float hingeAngleRaw => (hinge.angle + 180) / 360f;
-    
-    private float previousAngle = 0;
-    public float HingeSumDelta { get; private set; } = 0;
+    private bool _canMaxEvent = true;
+    private bool _canMinEvent = true;
+    private float _previousAngle = 0;
+    private float _hingeSumDelta = 0;
 
-    public float RawHingeSum =>
-        (HingeSumDelta) / // + maxSumAngleRange * .5f) /
-        maxSumAngleRange;
+    public float hingeSum01 => _hingeSumDelta / maxSumAngleRange;
 
-    private void Update()
+    private void FixedUpdate()
     {
-        float delta = hinge.angle - previousAngle;
+        float delta = hinge.angle - _previousAngle;
         if (Mathf.Abs(delta) > 270f)
         {
             if (delta > 180) 
@@ -38,29 +36,31 @@ public class Crank : MonoBehaviour
             else 
                 delta += 360;
         }
-        HingeSumDelta += delta;
-        previousAngle = hinge.angle;
-        text.text = RawHingeSum.ToString("P0");
+        _hingeSumDelta += delta;
+        _previousAngle = hinge.angle;
+        onHingeSum01Change?.Invoke(hingeSum01);
+        onHingeAngleChange?.Invoke(delta);
+        text.text = hingeSum01.ToString("P0");
+
+        if (!limitRange) return;
         
-        if (HingeSumDelta < maxSumAngleRange && HingeSumDelta >= 0)
+        if (_hingeSumDelta < maxSumAngleRange && _hingeSumDelta >= 0)
         {
             if (hinge.useLimits) UnfreezeHandle();
-            
-            onHingeAngleChange?.Invoke(RawHingeSum);
         }
         else if (!hinge.useLimits)
         {
-            if (HingeSumDelta < 1 && canMinEvent)
+            if (_hingeSumDelta < 1 && _canMinEvent)
             {
                 onHingeAngleMin?.Invoke();
-                canMinEvent = false;
-                canMaxEvent = true;
+                _canMinEvent = false;
+                _canMaxEvent = true;
             }
-            else if (canMaxEvent)
+            else if (_canMaxEvent)
             {
                 onHingeAngleMax?.Invoke();
-                canMinEvent = true;
-                canMaxEvent = false;
+                _canMinEvent = true;
+                _canMaxEvent = false;
             }
             
             FreezeHandle();

@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class RotatingPlatform : MonoBehaviour
 {
-    [Header("Rotating Platform")]
+    [Header("Rotating Platform")] 
+    public bool autoMove = true;
     public float rotateSpeed = 10;
+    public float crankMultiplier = .1f;
 
     private Vector3 upDirection;
 
@@ -25,42 +27,40 @@ public class RotatingPlatform : MonoBehaviour
 
     void FixedUpdate()
     {
-        RotatePlatform();
+        if (autoMove)
+        {
+            Quaternion deltaRotation = Quaternion.AngleAxis(rotateSpeed * Time.deltaTime, upDirection);
+            rb.MoveRotation(rb.rotation * deltaRotation);
+        }
     }
 
-    private void RotatePlatform()
+    public void RotatePlatform(float delta)
     {
-        Quaternion deltaRotation = Quaternion.AngleAxis(rotateSpeed * Time.deltaTime, upDirection);
-
+        Debug.Log(delta + ": " + delta * crankMultiplier);
+        
+        Quaternion deltaRotation = 
+            Quaternion.AngleAxis(delta * crankMultiplier, upDirection);
         rb.MoveRotation(rb.rotation * deltaRotation);
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void HoldGameObject(Transform go)
     {
-        if (other.CompareTag("Player"))
-        {
-            if (originalParent == null)
-            {
-                originalParent = other.gameObject.transform.parent;
-            }
-
-
-            other.gameObject.transform.SetParent(playerHolder);
-        }
+        if (!go.CompareTag("Player")) return;
+        
+        if (originalParent == null)
+            originalParent = go.gameObject.transform.parent;
+        
+        go.SetParent(playerHolder);
     }
 
-    private void OnTriggerExit(Collider other)
+    public void LetGo(Transform go)
     {
-        if (other.CompareTag("Player"))
-        {
-            other.gameObject.transform.SetParent(originalParent);
+        if (!go.CompareTag("Player")) return;
+        
+        go.SetParent(originalParent);
 
-            originalParent = null;
-
-        }
+        originalParent = null;
     }
-
-
 
     private void OnDrawGizmos()
     {

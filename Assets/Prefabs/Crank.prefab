@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 839ad5bc75d87464cafd6acf21a704b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  limitRange: 1
   hinge: {fileID: 2170935103335628198}
   text: {fileID: 2076828740116536976}
   maxSumAngleRange: 720
@@ -66,36 +67,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onHingeSum01Change:
+    m_PersistentCalls:
+      m_Calls: []
   onHingeAngleMin:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2179310909363033172}
-        m_TargetAssemblyTypeName: Crank, Assembly-CSharp
-        m_MethodName: TEST_MIN
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onHingeAngleMax:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2179310909363033172}
-        m_TargetAssemblyTypeName: Crank, Assembly-CSharp
-        m_MethodName: TEST_MAX
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &894690307406965005
 GameObject:
   m_ObjectHideFlags: 0
